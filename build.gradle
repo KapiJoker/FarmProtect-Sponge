@@ -1,0 +1,22 @@
+plugins {
+    id 'org.spongepowered.plugin' version '0.8.1'
+}
+
+repositories {
+    maven{ url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'}
+    maven{ url 'https://maven.aliyun.com/repository/central'}
+    maven {
+        name = 'sponge-repo'
+        url = 'https://repo.spongepowered.org/maven'
+    }
+    maven{ url 'https://files.minecraftforge.net/maven' }
+}
+
+group = pluginGroup
+version = pluginVersion
+
+dependencies {
+    compile 'org.spongepowered:spongeapi:7.1.0'
+}
+
+sponge.plugin.id = pluginId
